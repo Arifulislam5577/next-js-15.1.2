@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --radius: 0.25rem;
+  }
+  .dark {
+    --background: #171717;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  @apply dark:bg-slate-900 bg-white text-[var(--foreground)];
+}
